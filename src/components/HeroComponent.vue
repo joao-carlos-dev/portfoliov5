@@ -62,7 +62,7 @@ const subtitle = ref('Sou Desenvolvedor Front End');
     font-size: 86px;
     font-weight: bold;
     margin: 0;
-    line-height: 1;
+    line-height: 1.2;
     text-transform: uppercase;
 }
 
