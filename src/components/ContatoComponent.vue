@@ -121,6 +121,49 @@ const redes = ref('Minhas redes sociais');
   color: #0A66C2;
 }
 
+@media screen and (max-width: 415px) {
+  .contato {
+    flex-direction: row;
+    /* Layout em linha em telas maiores */
+    height: 400px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .title {
+    font-size: 18px;
+    text-align: justify;
+    padding: 183px 138px 0 0;
+    width: 235px;
+    height: 110px;
+  }
+
+  .entraContato {
+    /* padding-top: 183px; */
+    /* padding-left: 246px; */
+    padding: 0;
+    text-align: left;
+  }
+
+  .email {
+    padding-bottom: 81px;
+  }
+
+  .redes {
+    padding-top: 81px;
+    display: block;
+    gap: 0;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+
+  .icon-link {
+    font-size: 2rem;
+  }
+}
+
 /* Media Query para Tablets (481px a 1024px) */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .contato {

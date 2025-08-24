@@ -98,6 +98,39 @@ const funcaodesc = ref('Desenvolvedor front-end');
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 415px) {
+  .sobre-title {
+    font-size: 42px;
+    padding-bottom: 38px;
+  }
+
+  .sobre-info {
+    flex-direction: column;
+    /* Volta para o layout em linha */
+    justify-content: center;
+  }
+
+  .sobre-card {
+    width: 370px;
+    height: 414px;
+    margin-right: 50px;
+  }
+
+  .sobre-card:last-child {
+    margin-right: 0;
+  }
+
+  .sobre-subtitle {
+    font-size: 18px;
+    padding-top: 71px;
+    padding-bottom: 57px;
+  }
+
+  .sobre-desc {
+    font-size: 32px;
+  }
+}
+
 /* Media Query para Tablets (481px a 1024px) */
 @media screen and (min-width: 481px) and (max-width: 1024px) {
   .sobre-title {

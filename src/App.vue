@@ -111,6 +111,7 @@ body {
   color: #fff;
   background-color: #93a9ff;
   border-radius: 50%;
+  display: none;
 }
 
 /* Container geral da seção */
@@ -208,7 +209,61 @@ body {
   background-color: #7a8fe3;
 }
 
-@media screen and (min-width: 390px) and (max-width: 1024px) {
+@media screen and (max-width: 415px) {
+  .projetos {
+    flex-direction: row;
+    /* Layout em linha em telas maiores */
+    padding: 60px;
+    padding-top: 950px;
+    height: auto;
+  }
+
+  .projeto-info {
+    padding: 0px;
+  }
+
+  .projetos-title {
+    flex: 1;
+    text-align: left;
+  }
+
+  .title,
+  .titleAzul {
+    font-size: 39px;
+  }
+
+  .projetos-carrossel {
+    width: 50%;
+  }
+
+  .title-projeto {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  .desc-projeto {
+    font-size: 10px;
+    line-height: normal;
+    padding-bottom: 2px;
+  }
+
+  .carousel__prev,
+  .carousel__next {
+    display: block;
+    /* Mostra os botões novamente */
+  }
+
+  .links {
+    margin-top: 0;
+  }
+
+  .acessar {
+    padding: 3px 9px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .projetos {
     flex-direction: row;
     padding: 20px;

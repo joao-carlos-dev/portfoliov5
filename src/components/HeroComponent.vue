@@ -28,7 +28,7 @@ const subtitle = ref('Sou Desenvolvedor Front End');
   background-position: center;
   color: white;
   display: flex;
-  /* flex-direction: column; */
+  flex-direction: column;
   max-height: 600px;
   /* height: auto; */
   text-align: center;
@@ -84,8 +84,37 @@ const subtitle = ref('Sou Desenvolvedor Front End');
   font-weight: bold;
 }
 
+@media screen and (max-width: 415px) {
+  .hero {
+    flex-direction: column;
+    min-height: 600px;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .perfil {
+    width: 250px;
+  }
+
+  .hero-text {
+    margin: 0;
+    max-width: 556px;
+  }
+
+  .title,
+  .nome {
+    font-size: 38px;
+  }
+
+  .subtitle {
+    font-size: 21px;
+  }
+}
+
 /* Media Query para Tablets (481px a 1024px) */
-@media screen and (min-width: 390px) and (max-width: 1024px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .hero {
     flex-direction: column;
     height: 450px;
