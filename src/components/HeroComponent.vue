@@ -99,6 +99,7 @@ const subtitle = ref('Sou Desenvolvedor Front End');
   }
 
   .hero-text {
+    padding-top: 12px;
     margin: 0;
     max-width: 556px;
   }

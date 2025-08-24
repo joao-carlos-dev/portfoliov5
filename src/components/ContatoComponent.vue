@@ -125,7 +125,7 @@ const redes = ref('Minhas redes sociais');
   .contato {
     flex-direction: row;
     /* Layout em linha em telas maiores */
-    height: 400px;
+    height: 300px;
     padding: 0;
     justify-content: center;
     align-items: center;
@@ -151,11 +151,11 @@ const redes = ref('Minhas redes sociais');
   }
 
   .email {
-    padding-bottom: 81px;
+    padding-bottom: 40px;
   }
 
   .redes {
-    padding-top: 81px;
+    padding-top: 40px;
     display: block;
     gap: 0;
   }
@@ -165,7 +165,7 @@ const redes = ref('Minhas redes sociais');
   }
 
   .icon-link {
-    font-size: 2rem;
+    font-size: 18px;
   }
 }
 
