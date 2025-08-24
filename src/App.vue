@@ -8,6 +8,18 @@ import { Carousel, Slide, Navigation } from 'vue3-carousel';
 
 const cards = [
   {
+    titleProjeto: 'Freguesia de Mirim',
+    descProjeto: 'Website sobre a Freguesia de Mirim (Imbituba-SC), explorando história e cultura local. Utiliza HTML, CSS (minificado e responsivo), JavaScript, Bootstrap, Swiper e Google Fonts. Gulp otimiza CSS e imagens. Apresenta notícias, história da Sociedade Cultural, informações sobre a Lagoa do Mirim, eventos culturais (Festa do Divino, exposições), detalhes de visitação e contato. Design responsivo e otimizado para desempenho. Contribuições são bem-vindas via GitHub.',
+    linkGithub: 'https://github.com/joao-carlos-dev/freguesia_de_mirim/tree/main',
+    linkDeploy: 'https://scfreguesiademirim.web.app/',
+  },
+  {
+    titleProjeto: 'Zimba Lero Lero',
+    descProjeto: 'Projeto final do curso Full Stack Python, na EBAC. Que tinha como objetivo fazer uma aplicação completa, back e front end. A aplicação é uma rede social, aonde o usuário pode fazer seu cadastro e login, ao entra na conta, pode fazer um post, seguir um outro usuário, fazer comentários, e futuras melhorias, poder colocar foto de perfil, editar e excluir comentário e posts e entre outras. No front end, foi utilizado o React com o Vite, React Router DOM. No back end, foi utilizado o python e o Django REST Framework (DRF).',
+    linkGithub: 'https://github.com/joao-carlos-dev/zimbaleroleroback',
+    linkDeploy: 'https://zimbalerolero-front.vercel.app/login',
+  },
+  {
     titleProjeto: 'Projeto Geovani Diretor',
     descProjeto: 'O objetivo do projeto era, além de mostrar os principais tópicos da campanha, também informar quais os documentos o público votante precisaria levar na hora da votação. Além disso, também era disponibilizado o Plano de Gestão completo para baixar em PDF. Tecnologias utilizadas: HTML, CSS e JavaScript.',
     linkGithub: 'https://github.com/joao-carlos-dev/projeto_geovani_diretor',
@@ -20,10 +32,22 @@ const cards = [
     linkDeploy: 'https://efood-mu-coral.vercel.app/',
   },
   {
-    titleProjeto: 'Freguesia de Mirim',
-    descProjeto: 'Website sobre a Freguesia de Mirim (Imbituba-SC), explorando história e cultura local. Utiliza HTML, CSS (minificado e responsivo), JavaScript, Bootstrap, Swiper e Google Fonts. Gulp otimiza CSS e imagens. Apresenta notícias, história da Sociedade Cultural, informações sobre a Lagoa do Mirim, eventos culturais (Festa do Divino, exposições), detalhes de visitação e contato. Design responsivo e otimizado para desempenho. Contribuições são bem-vindas via GitHub.',
-    linkGithub: 'https://github.com/joao-carlos-dev/freguesia_de_mirim/tree/main',
-    linkDeploy: 'https://scfreguesiademirim.web.app/',
+    titleProjeto: 'Landing Page',
+    descProjeto: 'O objetivo do projeto era criar uma “Landing page” utilizando a automação de tarefas com o gulp e aplicar a metodologia BEM e o pré-processador SASS.',
+    linkGithub: 'https://github.com/joao-carlos-dev/projeto_04_tarefa',
+    linkDeploy: 'https://sobrenaturalserie.vercel.app/',
+  },
+  {
+    titleProjeto: 'Biblioteca do Bootstrap',
+    descProjeto: 'O objetivo deste projeto era criar uma página utilizando-se da biblioteca do Bootstrap e, por meio dela, criar um carrosel de imagens e menu responsivo. Na base desse projeto também foi utilizado o HTML e CSS.',
+    linkGithub: 'https://github.com/joao-carlos-dev/curso_ebac_frontend/tree/mod_14_tarefa_projeto_03',
+    linkDeploy: 'https://imbitubacity.web.app/',
+  },
+  {
+    titleProjeto: 'Agenda de Contatos',
+    descProjeto: 'Pojeto utilizando React, Styled Components e Redux. O React foi a biblioteca escolhida para criar interface, o Styled Components responsável por estilizar aplicação e o Redux para gerenciar o estado da aplicação do projeto. O projeto tem como foco criar uma lista de contatos, aonde podemos, consultar os contatos, por filtros, adicionar novos contatos, editar e remover contatos.',
+    linkGithub: 'https://github.com/joao-carlos-dev/ListaDeContato',
+    linkDeploy: 'https://lista-contato-virid.vercel.app/',
   }
 ];
 </script>
@@ -74,7 +98,7 @@ body {
 /* Estilos para o carrossel Vue3 Carousel */
 .projetos-carrossel {
   flex: 1;
-  width: 50%;
+  width: 100%;
 }
 
 .carousel__slide {
@@ -93,10 +117,11 @@ body {
 .projetos {
   background-image: linear-gradient(90deg, #000000, #737373);
   display: flex;
+  flex-direction: column;
   align-items: center;
   padding: 60px;
   color: white;
-  max-width: 1280px;
+  /* max-width: 1280px; */
   min-height: 600px;
   box-sizing: border-box;
   margin: 0 auto;
@@ -111,7 +136,7 @@ body {
 .title,
 .titleAzul {
   font-family: "Antonio", sans-serif;
-  font-size: 39px;
+  font-size: 28px;
   font-weight: bold;
   margin: 0;
   text-transform: uppercase;
@@ -153,6 +178,7 @@ body {
 .desc-projeto {
   font-family: "Antonio", sans-serif;
   font-size: 16px;
+  text-align: justify;
   line-height: 1.4;
   text-transform: uppercase;
   padding-bottom: 20px;
@@ -168,16 +194,78 @@ body {
 
 .acessar {
   text-decoration: none;
-  background-color: #93a9ff;
+  text-transform: uppercase;
+  background-color: white;
   padding: 6px 12px;
   border-radius: 4px;
   font-size: 14px;
   font-weight: bold;
   transition: background 0.2s;
-  color: black;
+  color: #93a9ff;
 }
 
 .acessar:hover {
   background-color: #7a8fe3;
+}
+
+@media screen and (min-width: 390px) and (max-width: 1024px) {
+  .projetos {
+    flex-direction: row;
+    padding: 20px;
+    padding-top: 300px;
+  }
+
+  .projeto-info {
+    padding: 8px;
+  }
+
+  .projetos-title {
+    text-align: left;
+    margin-right: 20px;
+    margin-bottom: 0;
+  }
+
+  .title,
+  .titleAzul {
+    font-size: 32px;
+  }
+
+  .title-projeto {
+    margin-bottom: 4px;
+    font-size: 14px;
+  }
+
+  .desc-projeto {
+    line-height: normal;
+    font-size: 12px;
+    padding-bottom: 4px;
+  }
+
+  .projetos-carrossel {
+    width: 60%;
+  }
+}
+
+/* Media Query para Desktops (acima de 1025px) */
+@media screen and (min-width: 1025px) {
+  .projetos {
+    flex-direction: row;
+    padding: 60px;
+  }
+
+  .projetos-title {
+    text-align: left;
+    margin-right: 40px;
+    margin-bottom: 0;
+  }
+
+  .title,
+  .titleAzul {
+    font-size: 39px;
+  }
+
+  .projetos-carrossel {
+    width: 50%;
+  }
 }
 </style>
