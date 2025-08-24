@@ -111,9 +111,8 @@ const funcaodesc = ref('Desenvolvedor front-end');
   }
 
   .sobre-card {
-    width: 370px;
-    height: 414px;
-    margin-right: 50px;
+    height: 70%;
+    /* margin-right: 50px; */
   }
 
   .sobre-card:last-child {

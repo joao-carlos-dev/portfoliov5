@@ -214,8 +214,9 @@ body {
     flex-direction: row;
     /* Layout em linha em telas maiores */
     padding: 60px;
-    padding-top: 950px;
+    padding-top: 550px;
     height: auto;
+    width: auto;
   }
 
   .projeto-info {
@@ -225,15 +226,16 @@ body {
   .projetos-title {
     flex: 1;
     text-align: left;
+    padding-right: 12px;
   }
 
   .title,
   .titleAzul {
-    font-size: 39px;
+    font-size: 29px;
   }
 
   .projetos-carrossel {
-    width: 50%;
+    width: 60%;
   }
 
   .title-projeto {
@@ -254,7 +256,7 @@ body {
   }
 
   .links {
-    margin-top: 0;
+    margin-top: 8px;
   }
 
   .acessar {

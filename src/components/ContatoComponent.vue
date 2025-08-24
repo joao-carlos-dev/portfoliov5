@@ -128,12 +128,13 @@ const redes = ref('Minhas redes sociais');
     height: 400px;
     padding: 0;
     justify-content: center;
+    align-items: center;
   }
 
   .title {
     font-size: 18px;
-    text-align: justify;
-    padding: 183px 138px 0 0;
+    text-align: left;
+    padding-left: 30px;
     width: 235px;
     height: 110px;
   }
@@ -143,6 +144,10 @@ const redes = ref('Minhas redes sociais');
     /* padding-left: 246px; */
     padding: 0;
     text-align: left;
+  }
+
+  .subtitle {
+    font-size: 10px;
   }
 
   .email {
@@ -156,7 +161,7 @@ const redes = ref('Minhas redes sociais');
   }
 
   .link {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .icon-link {
