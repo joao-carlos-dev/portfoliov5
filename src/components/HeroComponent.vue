@@ -84,7 +84,7 @@ const subtitle = ref('Sou Desenvolvedor Front End');
   font-weight: bold;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 480px) {
   .hero {
     flex-direction: column;
     min-height: 600px;
@@ -105,7 +105,7 @@ const subtitle = ref('Sou Desenvolvedor Front End');
 
   .title,
   .nome {
-    font-size: 38px;
+    font-size: 36px;
   }
 
   .subtitle {

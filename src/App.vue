@@ -209,7 +209,7 @@ body {
   background-color: #7a8fe3;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 480px) {
   .projetos {
     flex-direction: row;
     /* Layout em linha em telas maiores */

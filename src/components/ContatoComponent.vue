@@ -121,7 +121,7 @@ const redes = ref('Minhas redes sociais');
   color: #0A66C2;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 480px) {
   .contato {
     flex-direction: row;
     /* Layout em linha em telas maiores */
@@ -147,7 +147,7 @@ const redes = ref('Minhas redes sociais');
   }
 
   .subtitle {
-    font-size: 10px;
+    font-size: 8px;
   }
 
   .email {
@@ -161,7 +161,7 @@ const redes = ref('Minhas redes sociais');
   }
 
   .link {
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .icon-link {

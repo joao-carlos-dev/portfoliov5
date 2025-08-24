@@ -98,7 +98,7 @@ const funcaodesc = ref('Desenvolvedor front-end');
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 480px) {
   .sobre-title {
     font-size: 42px;
     padding-bottom: 38px;
