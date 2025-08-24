@@ -121,8 +121,8 @@ const funcaodesc = ref('Desenvolvedor front-end');
 
   .sobre-subtitle {
     font-size: 18px;
-    padding-top: 71px;
-    padding-bottom: 57px;
+    padding-top: 31px;
+    padding-bottom: 47px;
   }
 
   .sobre-desc {

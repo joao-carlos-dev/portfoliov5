@@ -214,7 +214,7 @@ body {
     flex-direction: row;
     /* Layout em linha em telas maiores */
     padding: 60px;
-    padding-top: 550px;
+    padding-top: 350px;
     height: auto;
     width: auto;
   }
@@ -260,8 +260,8 @@ body {
   }
 
   .acessar {
-    padding: 3px 9px;
-    font-size: 12px;
+    padding: 3px;
+    font-size: 8px;
   }
 }
 
