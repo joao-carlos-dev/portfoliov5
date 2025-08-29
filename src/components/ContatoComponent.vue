@@ -229,7 +229,7 @@ const redes = ref('Minhas redes sociais');
 
   .redes {
     padding-top: 81px;
-    display: flex;
+    display: block;
   }
 }
 </style>

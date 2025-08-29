@@ -17,7 +17,7 @@ const cards = [
     titleProjeto: 'Zimba Lero Lero',
     descProjeto: 'Projeto final do curso Full Stack Python, na EBAC. Que tinha como objetivo fazer uma aplicação completa, back e front end. A aplicação é uma rede social, aonde o usuário pode fazer seu cadastro e login, ao entra na conta, pode fazer um post, seguir um outro usuário, fazer comentários, e futuras melhorias, poder colocar foto de perfil, editar e excluir comentário e posts e entre outras. No front end, foi utilizado o React com o Vite, React Router DOM. No back end, foi utilizado o python e o Django REST Framework (DRF).',
     linkGithub: 'https://github.com/joao-carlos-dev/zimbaleroleroback',
-    linkDeploy: 'https://zimbalerolero-front.vercel.app/login',
+    linkDeploy: 'https://zimbalerolero-front.vercel.app',
   },
   {
     titleProjeto: 'Projeto Geovani Diretor',
@@ -160,6 +160,7 @@ body {
   border: 1px solid #93a9ff;
   color: white;
   border-radius: 20px;
+  overflow: hidden;
 }
 
 .projeto-info {
