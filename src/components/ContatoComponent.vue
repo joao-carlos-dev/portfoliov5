@@ -35,7 +35,7 @@
 <script setup>
 import { ref } from 'vue';
 
-const contatoTitle = ref('séra um prazer trabalhar com todos vocês!');
+const contatoTitle = ref('séra um prazer trabalhar conhecer você!');
 const email = ref('E-mail');
 const curriculo = ref('Currículo');
 const redes = ref('Minhas redes sociais');
@@ -133,15 +133,12 @@ const redes = ref('Minhas redes sociais');
 
   .title {
     font-size: 18px;
-    text-align: left;
     padding-left: 30px;
     width: 235px;
     height: 110px;
   }
 
   .entraContato {
-    /* padding-top: 183px; */
-    /* padding-left: 246px; */
     padding: 0;
     text-align: left;
   }
@@ -161,7 +158,8 @@ const redes = ref('Minhas redes sociais');
   }
 
   .link {
-    font-size: 10px;
+    font-size: 6px;
+    font-weight: normal;
   }
 
   .icon-link {

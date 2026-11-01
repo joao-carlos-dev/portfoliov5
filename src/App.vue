@@ -11,26 +11,16 @@ const cards = [
     titleProjeto: 'Freguesia de Mirim',
     descProjeto: 'Website sobre a Freguesia de Mirim (Imbituba-SC), explorando história e cultura local. Utiliza HTML, CSS (minificado e responsivo), JavaScript, Bootstrap, Swiper e Google Fonts. Gulp otimiza CSS e imagens. Apresenta notícias, história da Sociedade Cultural, informações sobre a Lagoa do Mirim, eventos culturais (Festa do Divino, exposições), detalhes de visitação e contato. Design responsivo e otimizado para desempenho. Contribuições são bem-vindas via GitHub.',
     linkGithub: 'https://github.com/joao-carlos-dev/freguesia_de_mirim/tree/main',
-    linkDeploy: 'https://scfreguesiademirim.web.app/',
+    linkDeploy: 'https://scfreguesiademirim.web.app/'
   },
-  {
-    titleProjeto: 'Zimba Lero Lero',
-    descProjeto: 'Projeto final do curso Full Stack Python, na EBAC. Que tinha como objetivo fazer uma aplicação completa, back e front end. A aplicação é uma rede social, aonde o usuário pode fazer seu cadastro e login, ao entra na conta, pode fazer um post, seguir um outro usuário, fazer comentários, e futuras melhorias, poder colocar foto de perfil, editar e excluir comentário e posts e entre outras. No front end, foi utilizado o React com o Vite, React Router DOM. No back end, foi utilizado o python e o Django REST Framework (DRF).',
-    linkGithub: 'https://github.com/joao-carlos-dev/zimbaleroleroback',
-    linkDeploy: 'https://zimbalerolero-front.vercel.app',
-  },
+
   {
     titleProjeto: 'Projeto Geovani Diretor',
     descProjeto: 'O objetivo do projeto era, além de mostrar os principais tópicos da campanha, também informar quais os documentos o público votante precisaria levar na hora da votação. Além disso, também era disponibilizado o Plano de Gestão completo para baixar em PDF. Tecnologias utilizadas: HTML, CSS e JavaScript.',
     linkGithub: 'https://github.com/joao-carlos-dev/projeto_geovani_diretor',
     linkDeploy: 'https://geovaniparadiretor.vercel.app/',
   },
-  {
-    titleProjeto: 'Efood',
-    descProjeto: 'Projeto final do curso Full Stack Python, dos módulos relacionados ao front-end. Que tinha como objetivo de criar uma aplicação, com o tema delivery de comida. Criar desde a página de apresentação dos produtos, adicionar ao carrinho, formulário de comprar, entrega. Tecnologias utilizadas, React, Typescript, styled components, redux e entre outras.',
-    linkGithub: 'https://github.com/joao-carlos-dev/EFood',
-    linkDeploy: 'https://efood-mu-coral.vercel.app/',
-  },
+  
   {
     titleProjeto: 'Landing Page',
     descProjeto: 'O objetivo do projeto era criar uma “Landing page” utilizando a automação de tarefas com o gulp e aplicar a metodologia BEM e o pré-processador SASS.',
@@ -69,6 +59,10 @@ const cards = [
             <div class="projeto-info">
               <h4 class="title-projeto">{{ card.titleProjeto }}</h4>
               <p class="desc-projeto">{{ card.descProjeto }}</p>
+              <div class="tags-container">
+                <span v-for="tag in card.tags" :key="tag" class="tag"> {{ tag }}</span>
+                
+              </div>
               <div class="links">
                 <a class="acessar" :href="card.linkGithub" target="_blank" rel="noopener noreferrer">GitHub</a>
                 <a class="acessar" :href="card.linkDeploy" target="_blank" rel="noopener noreferrer">Deploy</a>
@@ -165,7 +159,7 @@ body {
 
 .projeto-info {
   text-align: left;
-  padding: 20px;
+  padding: 14px;
   width: 100%;
 }
 
@@ -184,6 +178,23 @@ body {
   line-height: 1.4;
   text-transform: uppercase;
   padding-bottom: 20px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.tag {
+  background-color: white;
+  color: #93a9ff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
 }
 
 .links {
@@ -208,6 +219,7 @@ body {
 
 .acessar:hover {
   background-color: #7a8fe3;
+  color: #000000;
 }
 
 @media screen and (max-width: 480px) {
@@ -240,12 +252,12 @@ body {
   }
 
   .title-projeto {
-    font-size: 12px;
+    font-size: 10px;
     margin: 0;
   }
 
   .desc-projeto {
-    font-size: 10px;
+    font-size: 8px;
     line-height: normal;
     padding-bottom: 2px;
   }

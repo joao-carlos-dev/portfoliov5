@@ -26,10 +26,10 @@ import { ref } from 'vue';
 const sobreTitle = ref('um breve histórico');
 const local = ref('moro em');
 const cidade = ref('Imbituba, Santa Catarina');
-const trabalho = ref('Trabalho como');
-const localTrabalho = ref('Freelancer');
+const trabalho = ref('Trabalho na');
+const localTrabalho = ref('WMW Systems');
 const funcao = ref('minha função');
-const funcaodesc = ref('Desenvolvedor front-end');
+const funcaodesc = ref('Analista de Suporte');
 
 </script>
 

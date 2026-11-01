@@ -6,7 +6,7 @@
     <div class="hero-text">
       <h1 class="title">{{ title }}</h1>
       <h1 class="nome">{{ nome }}</h1>
-      <h4 class="subtitle"> {{ subtitle }}</h4>
+    
     </div>
   </div>
 </template>
@@ -16,7 +16,7 @@ import { ref } from 'vue';
 
 const title = ref('Olá, pessoal, meu nome é');
 const nome = ref('João Carlos Borges');
-const subtitle = ref('Sou Desenvolvedor Front End');
+
 </script>
 
 <style scoped>
