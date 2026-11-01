@@ -35,7 +35,7 @@
 <script setup>
 import { ref } from 'vue';
 
-const contatoTitle = ref('séra um prazer trabalhar conhecer você!');
+const contatoTitle = ref('séra um prazer conhecer você!');
 const email = ref('E-mail');
 const curriculo = ref('Currículo');
 const redes = ref('Minhas redes sociais');
